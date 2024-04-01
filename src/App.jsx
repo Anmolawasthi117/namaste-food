@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Body from './components/Body'
 const App = () => {
   return (
-    <div>
+    <div className=''>
       <Header></Header>
       <Body></Body>
     </div>
