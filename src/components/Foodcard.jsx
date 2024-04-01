@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-const Foodcard = () => {
+const Foodcard = (props) => {
   return (
-    <div>
-      <img src="https://imgs.search.brave.com/t-B5YbSq4TkFJD54ajWw3JyHgfowUz1CvekdAm6vvzo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/MTY0OTUwMy9waG90/by9jaGVlc2UtbWFz/YWxhLWRvc2EuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWRp/aFlIVXotOUxjMEFJ/dkRnT2FZZXMzRmtw/RG9IQlF1ZGFoOVM1/SDdFeVU9" alt="" />
-      <h3>Bumchak</h3>
-      <h3>5 star</h3>
+    <div className='font-mono p-2 m-5 h-[300px] w-[200px] hover:border  hover:cursor-pointer hover:bg-slate-200 hover:border-solid hover:border-black bg-orange-200 rounded-xl'>
+      <img className=' object-cover h-2/3  rounded-2xl '  src={props.img} alt="" />
+      <h3>{props.resName}</h3>
+      <h3>{props.cousine}</h3>
+      <h3>{props.rating}</h3>
       <h3>42min</h3>
     </div>
   )
