@@ -1,13 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import Foodcard from "./Foodcard";
-
+import Search from "./Search";
 
 const Body = () => {
   return (
     <div>
-      <div className="search ">
-        <input className=" w-[90%]  block  rounded border border-solid bg-slate-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-black focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-black dark:placeholder:text-black dark:autofill:shadow-autofill dark:focus:border-primary m-5 " placeholder="search" type="text" />
+      <div className="search flex justify-start m-5 items-center   ">
+       <Search></Search>
+       <button className="filter border rounded-2xl bg-orange-100 w-20 h-10 hover:cursor-pointer ml-20 hover:bg-slate-200" onClick={ () => {
+        console.log("clicked here")
+       }}>Filter</button>
       </div>
       <div className="foodcontainer flex flex-wrap">
         <Foodcard resName="Bumchak" img="https://imgs.search.brave.com/t-B5YbSq4TkFJD54ajWw3JyHgfowUz1CvekdAm6vvzo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/MTY0OTUwMy9waG90/by9jaGVlc2UtbWFz/YWxhLWRvc2EuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWRp/aFlIVXotOUxjMEFJ/dkRnT2FZZXMzRmtw/RG9IQlF1ZGFoOVM1/SDdFeVU9" cousine="Dosa,South Indian
