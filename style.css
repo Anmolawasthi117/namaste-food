@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  /* background-color: rgb(227, 142, 30); */
+  height: 70px;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* position: fixed; */
+  width: 100%;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+.navbar > .menu {
+  /* border: 2px solid red; */
+  width: 80%;
+}
+.navbar > .menu > ul {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 100%;
+  list-style: none;
+}
+.navbar > .menu > ul > li {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  list-style: none;
+}
+.navbar > .menu > ul > li > a {
+  /* border: 2px solid red; */
+  color: black;
+  padding: 20px;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+}
+.navbar > .menu > ul > li > a:hover {
+  /* border: 2px solid red; */
+  background-color: rgb(255, 177, 82);
+}
+.navbar > .logo > img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+
+.restaurants > a {
+  display: flex;
+  height: 500px;
+  width: 25%;
+  border: 0px solid rgb(232, 225, 225);
+  margin: 50px;
+  /* justify-content: space-between; */
+}
+
+.search-box{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box > .search-input{
+  height: 5vh;
+  border-radius: 10px;
+  width: 50%;
+  border: 1px solid black;
+  
+  
+}
+.search-box >  .search-btn{
+  padding: 1.6vh;
+  margin: 0px 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+
+}
+.search-box >  .search-btn:hover{
+  cursor: pointer;
+}
+
+.navbar > .login-btn{
+  /* border: 2px solid red; */
+  width: 7%;
+  font-size: 1rem;
+  font-weight: bolder;
+  /* background-color: rgb(201, 140, 0); */
+  width: 10%;
+  height: 70%;
+  margin: auto;
+  border-radius: 5px;
+  /* mix-blend-mode: color-burn; */
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(201, 140, 0) 0px 0px 0px 1px inset;
+}
+.navbar > .login-btn:hover{
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.rescard {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  border: 2px solid rgb(232, 225, 225);
+  justify-content: space-between;
+  /* margin: 30px; */
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.shimmer-cont {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  border: 2px solid rgb(210, 210, 237);
+  justify-content: space-evenly;
+}
+.shimmer-cont > .shimmer-card > .shimmer-img {
+  height: 50%;
+  border-radius: 5px;
+  width: 90%;
+  margin: 5px 20px;
+  background-color: rgb(162, 157, 157);
+  opacity: 20%;
+}
+.shimmer-cont > .shimmer-card > .shimmer-name {
+  height: 10%;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(162, 157, 157);
+  opacity: 20%;
+}
+.shimmer-cont > .shimmer-card > .shimmer-location {
+  height: 10%;
+  border-radius: 5px;
+
+  width: 70%;
+  background-color: rgb(162, 157, 157);
+  opacity: 20%;
+}
+.shimmer-cont > .shimmer-card > .shimmer-cusines {
+  height: 10%;
+  border-radius: 5px;
+  width: 60%;
+  background-color: rgb(162, 157, 157);
+  opacity: 20%;
+}
+.shimmer-card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: 500px;
+  width: 25%;
+  border: 2px solid rgb(232, 225, 225);
+  justify-content: space-between;
+  margin: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.rescard:hover {
+  transform: translateY(-5);
+}
+.rescard > img {
+  height: 50%;
+  border-radius: 5px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+.rescard > h2 h1 {
+  margin: 0px 5px;
+}
+
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* .restaurants > a{
+  background-color: red;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+
+.footcls {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}

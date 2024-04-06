@@ -1,0 +1,55 @@
+.restaurant-menu-info-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-img > img{
+    border-radius: 5px;
+    height: 95%;
+    width: 95%;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-img{
+    height: 100%;
+    width : 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restaurant-menu-info-card .restaurant-menu-info-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 15px;
+    justify-content: flex-start;
+    width: 100%;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-text h3 {
+    margin: 5px;
+    padding: 0px;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-text h5 {
+    margin: 5px;
+    padding: 0px;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-text h1{
+    margin: 0px;
+    padding: 0px;
+}
+.restaurant-menu-info-card > .restaurant-menu-info-card-text p{
+    margin: 0px;
+    padding: 0px;
+}
+.restaurant-menu-info-card >.restaurant-menu-info-card-text > .addbtn{
+    width: 20%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 175, 175);
+    font-size: 1rem;
+    font-weight: bold;
+    color: green;
+}
+.restaurant-menu-info-card >.restaurant-menu-info-card-text > .addbtn:hover{
+    cursor: pointer;
+}
